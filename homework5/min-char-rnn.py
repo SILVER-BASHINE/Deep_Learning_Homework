@@ -5,7 +5,7 @@ BSD License
 import numpy as np
 
 # data I/O
-data = open('input.txt', 'r').read() # should be simple plain text file
+data = open('shakespeare_train.txt', 'r').read() # should be simple plain text file
 chars = list(set(data)) # 得到输入文件中所有字符种类
 data_size, vocab_size = len(list(data)),len(chars) #your code##统计文件字符数和字符种类数
 print ('data has %d characters, %d unique.' % (data_size, vocab_size))
